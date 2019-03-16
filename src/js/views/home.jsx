@@ -12,8 +12,8 @@ import {
 	Row
 } from "reactstrap";
 import "../../styles/home.css";
-import {Events} from "../component/eventCard.jsx"
- 
+import Events from "../component/eventCard.jsx";
+
 export class Home extends React.Component {
 	render() {
 		return (
@@ -30,7 +30,7 @@ export class Home extends React.Component {
 						</Container>
 					</Jumbotron>
 				</div>
-				<Events/>
+				<Events />
 			</Container>
 		);
 	}

@@ -18,7 +18,7 @@ const getState = ({ getStore, setStore }) => {
 				{
 					date: "5/3/19",
 					time: "7:00 AM",
-					event: "graduation",
+					event: "Graduation",
 					meetup: "4GeeksStudents"
 				}
 			]
