@@ -18,7 +18,7 @@ const Example = props => {
 			<Card>
 				<CardImg
 					top
-					width="100%"
+					width="50%"
 					src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
 					alt="Card image cap"
 				/>
@@ -37,20 +37,17 @@ const Example = props => {
 	);
 };
 
-export default Example;
 export class Meetups extends React.Component {
 	render() {
 		return (
 			<div className="jumbotron">
+				<Example />
 				<Context.Consumer>
 					{({ store }) => {
 						return (
 							<h1 className="display-4">
 								This will show the demo element:{" "}
-								{
-									store.demo[this.props.match.params.theid]
-										.title
-								}
+								{store.demo[0].title}
 							</h1>
 						);
 					}}

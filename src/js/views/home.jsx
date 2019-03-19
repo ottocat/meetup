@@ -1,35 +1,40 @@
 import React from "react";
 import {
 	Card,
-	CardImg,
-	CardText,
+	Button,
+	CardHeader,
+	CardFooter,
 	CardBody,
 	CardTitle,
-	CardSubtitle,
-	Button
+	CardText
 } from "reactstrap";
 import "../../styles/home.css";
 
 export class Home extends React.Component {
 	render() {
 		return (
-			<div className="col-3">
+			<div>
 				<Card>
-					<CardImg
-						top
-						width="100%"
-						src="https://d35aaqx5ub95lt.cloudfront.net/images/owl-pointing-sparkly-cropped.svg"
-						alt="Card image cap"
-					/>
+					<CardHeader>Header</CardHeader>
 					<CardBody>
-						<CardTitle>Card title</CardTitle>
-						<CardSubtitle>Card subtitle</CardSubtitle>
+						<CardTitle>Special Title Treatment</CardTitle>
 						<CardText>
-							{
-								"Some quick example text to build on the card title and make up the bulk of the card's content."
-							}
+							With supporting text below as a natural lead-in to
+							additional content.
 						</CardText>
-						<Button>Button</Button>
+						<Button>Go somewhere</Button>
+					</CardBody>
+					<CardFooter>Footer</CardFooter>
+				</Card>
+
+				<Card>
+					<CardHeader tag="h3">Featured</CardHeader>
+					<CardBody>
+						<CardTitle>Special Title Treatment</CardTitle>
+						<CardText>
+							With supporting text below as a natural lead-in to
+							additional content.
+						</CardText>
 					</CardBody>
 				</Card>
 			</div>
