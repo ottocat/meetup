@@ -20,6 +20,23 @@ const Store = PassedComponent => {
 			// this function is the equivalent to "window.onLoad"
 			// it only run once on the entire application lifetime
 			// you should do your ajax requests here
+			fetch("https://assets.breatheco.de/apis/fake/weird_portfolio.php")
+				.then(response => {
+					if (response.status !== 200) {
+						alert("Connection error, status " + response.status);
+						return;
+					}
+
+					response.json().then(data => {
+						// let store = this.state.store;
+						// store.meetups = data;npm
+						// this.setState({ store });
+						console.log(data);
+					});
+				})
+				.catch(err => {
+					alert("Fetch error: ", err);
+				});
 		}
 
 		render() {
