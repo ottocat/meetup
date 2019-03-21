@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/functional/scrollToTop.jsx";
 
 import { Home } from "./views/home.jsx";
-import { Events } from "./views/events.jsx";
+import Events from "./views/events.jsx";
 import { Meetups } from "./views/meetups.jsx";
 import { Example } from "./views/meetups.jsx";
 import Store from "./store/appContext.jsx";

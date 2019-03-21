@@ -6,9 +6,13 @@ import {
 	CardFooter,
 	CardBody,
 	CardTitle,
-	CardText
+	CardText,
+	Jumbotron,
+	Container,
+	Row
 } from "reactstrap";
 import "../../styles/home.css";
+import Events from "../component/eventCard.jsx";
 
 export class Home extends React.Component {
 	render() {
