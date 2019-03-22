@@ -17,21 +17,31 @@ import Events from "../component/eventCard.jsx";
 export class Home extends React.Component {
 	render() {
 		return (
-			<Container>
-				<div>
-					<Jumbotron fluid>
-						<Container fluid>
-							<h1 className="display-3">Hangz</h1>
-							<p className="lead">
-								{
-									"The site that's alright for a night of tight activities"
-								}
-							</p>
-						</Container>
-					</Jumbotron>
-				</div>
-				<Events />
-			</Container>
+			<div>
+				<Card>
+					<CardHeader>Header</CardHeader>
+					<CardBody>
+						<CardTitle>Special Title Treatment</CardTitle>
+						<CardText>
+							With supporting text below as a natural lead-in to
+							additional content.
+						</CardText>
+						<Button>Go somewhere</Button>
+					</CardBody>
+					<CardFooter>Footer</CardFooter>
+				</Card>
+
+				<Card>
+					<CardHeader tag="h3">Featured</CardHeader>
+					<CardBody>
+						<CardTitle>Special Title Treatment</CardTitle>
+						<CardText>
+							With supporting text below as a natural lead-in to
+							additional content.
+						</CardText>
+					</CardBody>
+				</Card>
+			</div>
 		);
 	}
 }

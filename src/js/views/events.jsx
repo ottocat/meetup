@@ -1,6 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+import { Jumbotron, Container } from "reactstrap";
+
+const Example = props => {
+	return (
+		<div>
+			<Jumbotron fluid>
+				<Container fluid>
+					<h1 className="display-3">Fluid jumbotron</h1>
+					<p className="lead">
+						This is a modified jumbotron that occupies the entire
+						horizontal space of its parent.
+					</p>
+				</Container>
+			</Jumbotron>
+=======
+=======
 import PropTypes from "prop-types";
+>>>>>>> 95ebf6b867dec9c43e5ce3d6052398ae35cc8154
 import { Context } from "../store/appContext.jsx";
 import { UncontrolledCollapse, Button, CardBody, Card } from "reactstrap";
 import { CardImg, CardText, CardTitle, CardSubtitle } from "reactstrap";
@@ -52,6 +72,7 @@ const Events = props => {
 					<CardText>{"Get out of your house ."}</CardText>
 				</CardBody>
 			</Card>
+>>>>>>> 0d73316e732e19e9e212ef82ae58390792f52588
 		</div>
 	);
 };
