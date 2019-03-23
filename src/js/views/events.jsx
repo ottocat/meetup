@@ -7,59 +7,57 @@ import { CardImg, CardText, CardTitle, CardSubtitle } from "reactstrap";
 import { Jumbotron, Container } from "reactstrap";
 
 const Example = props => {
-	return (
-		<div>
-			<Jumbotron fluid>
-				<Container fluid>
-					<h1 className="display">March 18</h1>
-					<p className="lead">5Th Event for meetup 1</p>
-				</Container>
-			</Jumbotron>
-		</div>
-	);
+    return (
+        <div>
+            <Jumbotron fluid>
+                <Container fluid>
+                    <h1 className="display">March 18</h1>
+                    <p className="lead">5Th Event for meetup 1</p>
+                </Container>
+            </Jumbotron>
+        </div>
+    );
 };
 
 //export default Example;
 
 const Events = props => {
-	return (
-		<div>
-			<Example />
-			<Button
-				color="primary"
-				id="toggler"
-				style={{ marginBottom: "1rem" }}>
-				Log n to RSV
-			</Button>
-			<UncontrolledCollapse toggler="#toggler">
-				<Card>
-					<CardBody>
-						Come in here to meet new and intersting people
-					</CardBody>
-				</Card>
-			</UncontrolledCollapse>
-			<Card>
-				<CardImg
-					top
-					width="100%"
-					src="https://previews.123rf.com/images/nd3000/nd30001607/nd3000160700449/60561726-happy-energetic-young-people-having-fun.jpg
-https://previews.123rf.com/images/nd3000/nd30001607/nd3000160700449/60561726-happy-energetic-young-people-having-fun.jpg
-"
-					alt="Card image cap"
-					className="col-sm-6 .order-sm-2 .offset-sm-1"
-				/>
-				<CardBody>
-					<CardTitle>Lets have fun</CardTitle>
-					<CardSubtitle>Get out of your house </CardSubtitle>
-					<CardText>{"Get out of your house ."}</CardText>
-				</CardBody>
-			</Card>
-		</div>
-	);
+    return (
+        <div>
+            <Example />
+            <Button
+                color="primary"
+                id="toggler"
+                style={{ marginBottom: "1rem" }}>
+                Log n to RSV
+            </Button>
+            <UncontrolledCollapse toggler="#toggler">
+                <Card>
+                    <CardBody>
+                        Come in here to meet new and intersting people
+                    </CardBody>
+                </Card>
+            </UncontrolledCollapse>
+            <Card>
+                <CardImg
+                    top
+                    width="100%"
+                    src=""
+                    alt="Card image cap"
+                    className="col-sm-6 .order-sm-2 .offset-sm-1"
+                />
+                <CardBody>
+                    <CardTitle>Lets have fun</CardTitle>
+                    <CardSubtitle>Get out of your house </CardSubtitle>
+                    <CardText>{"Get out of your house ."}</CardText>
+                </CardBody>
+            </Card>
+        </div>
+    );
 };
 
 Events.propTypes = {
-	items: PropTypes.array
+    items: PropTypes.array
 };
 
 export default Events;
