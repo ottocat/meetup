@@ -12,45 +12,39 @@ import {
 	Button
 } from "reactstrap";
 
-// const Example = props => {
-// 	return (
-// 		<div>
-// 			<Card>
-// 				<CardImg
-// 					top
-// 					width="100%"
-// 					src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-// 					alt="Card image cap"
-// 				/>
-// 				<CardBody>
-// 					<CardTitle>Card title</CardTitle>
-// 					<CardSubtitle>Card subtitle</CardSubtitle>
-// 					<CardText>
-// 						{
-// 							"Some quick example text to build on the card title and make up the bulk of the card's content."
-// 						}
-// 					</CardText>
-// 					<Button>Button</Button>
-// 				</CardBody>
-// 			</Card>
-// 		</div>
-// 	);
-// };
+const Example = props => {
+	return (
+		<div>
+			<Card>
+				<CardImg
+					top
+					width="50%"
+					src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+					alt="Card image cap"
+					className="col-3 card-img-top"
+				/>
+				<CardBody>
+					<CardTitle>Card title</CardTitle>
+					<CardSubtitle>Card subtitle</CardSubtitle>
+					<CardText />
+					<Button>Button</Button>
+				</CardBody>
+			</Card>
+		</div>
+	);
+};
 
-// export default Example;
 export class Meetups extends React.Component {
 	render() {
 		return (
 			<div className="jumbotron">
+				<Example />
 				<Context.Consumer>
 					{({ store }) => {
 						return (
 							<h1 className="display-4">
 								This will show the demo element:{" "}
-								{
-									store.demo[this.props.match.params.theid]
-										.title
-								}
+								{store.demo[0].title}
 							</h1>
 						);
 					}}
