@@ -14,29 +14,24 @@ const getState = ({ getStore, setStore }) => {
 				}
 			],
 
-			events: [
-				{
-					date: "5/3/19",
-					time: "7:00 AM",
-					event: "Graduation",
-					meetup: "4GeeksStudents"
-				}
-			]
+			meetups: [],
+			events: []
 		},
 		actions: {
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
+			findMeetupName: meetupID => {
+				let store = getStore();
+				if (store.meetups !== []) {
+					let meetup = store.meetups.filter(item => {
+						if (item.ID == meetupID) {
+							return item;
+						}
+					});
 
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
-				});
-
-				//reset the global store
-				setStore({ demo: demo });
+					if (meetup[0] !== undefined) {
+						console.log("title ", meetup[0].post_title);
+						return meetup[0].post_title;
+					}
+				}
 			}
 		}
 	};
